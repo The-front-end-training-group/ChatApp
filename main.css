@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url("bamboo.gif");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: -1;
+}
+
+main {
+    width: 1400px;
+    margin: 0 auto;
+    height: 75vh;
+}
+
+.icon-wrapper{
+    text-align: center;
+    cursor: pointer;
+}
+
+.control-icon{
+    display: block;
+    padding: 15px;
+    height: 30px;
+    width: 30px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+#site-title {
+    font-family: 'Permanent Marker', cursive;
+}
+
+#join-btn{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 280px;
+    height: 70px;
+}
+#get-back{
+    position: fixed;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 280px;
+    height: 70px;
+}
+#user-streams {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 1em;
+    height: 100%;
+
+}
+
+.video-containers {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: #1f1f1f8e;
+    border-radius: 18px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1),
+                0 5px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.video-player{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.user-uid {
+    display: block;
+    background-color: #1f1f1f8e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 9999;
+    margin: 0;
+    font-size: 18px;
+}
+
+#footer {
+    display: none;
+    gap: 1em;
+    justify-content: center;
+    column-gap: 1em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    main {
+        width: 95%;
+    }
+    #user-streams {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    
+    }
+}
